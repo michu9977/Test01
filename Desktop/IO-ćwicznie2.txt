@@ -1,0 +1,90 @@
+pralnia chemiczna prowadzi pranie i czyszczenie odzie¿y, dywanów itp. dla klientów indywidualnych – dostarczaj¹ i odbieraj¹ rzeczy do prania sami, oraz dla hoteli, moteli itp., od tych ostatnich pralnia zabiera rzeczy do prania i odwozi wyprane – us³ugi wykonuje albo cyklicznie albo na zamówienie od klienta instytucjonalnego, klienci mog¹ sprawdziæ – czy ich rzeczy zosta³y wyprane, pralnia zamawia wszelk¹ potrzebn¹ chemiê itp. w hurtowniach; 
+
+
+1. 
+a)Lista aktorów:
+pralnia=pracownicy,
+klient indywidualny,
+klient instytucjonalny,
+hurtownia
+
+b)Lista funkcjonalnoœci:
+przyjêcie do prania,
+ewidencja wykonania us³ugi,
+przywóz rzeczy do prania, 
+odwiezienie rzeczy wypranych,
+wydanie rzeczy,
+przywóz rzeczy do prania,
+odwiezienie rzeczy wypranych
+zamówienie od klienta
+zamówienie w hurtowni
+sprawdzenie stanu us³ugi
+
+c)Przydzia³ funkcji:
+klient indywidualny
+-sprawdzenie stanu us³ugi
+
+pracownicy
+-przyjêcie do prania,
+-ewidencja wykonania us³ugi,
+-przywóz rzeczy do prania, 
+-odwiezienie rzeczy wypranych,
+-wydanie rzeczy,
+-
+-zamówienie od klienta
+-zamówienie w hurtowni
+-sprawdzenie stanu us³ugi
+
+klient instytucjonalny
+-zamówienie od klienta
+-sprawdzenie stanu us³ugi
+
+hurtownia
+-zamówienia w hurtowni - odbiór - raport - NIC ¿adnej funcji
+
+ad.1.
+pracownicy
+-przyjêcie do prania,
+-ewidencja wykonania us³ugi,
+-przywóz rzeczy do prania, 
+-odwiezienie rzeczy wypranych,
+-wydanie rzeczy,
+-przywóz rzeczy do prania,
+-odwiezienie rzeczy wypranych
+-zamówienie od klienta
+-zamówienie w hurtowni
+-sprawdzenie stanu us³ugi
+
+podzia³ pracowników:
+pracownik,
+kierowca,
+kierownik 
+
+pracownik: przyjêcie do prania, ewidencja wykonania us³ugi, wydanie rzeczy upranych, sprawdzenie stanu us³ugi
+kierowca: przywóz rzeczy do prania, odwiezienie rzeczy wypranych
+kierwonik: zamówienie od klienta instytucjonalnego, zamówienie w hurtowni, sprawdzenie stanu us³ugi, pogl¹d wszystkiego
+
+2.
+a) grupy u¿ytkowników: klient indywidualny, klient instytucjonalny, pracownik, kierownik
+b) charakterystyki:
+- klient indywidualny - wiek 15-65, wykszta³cenie: podstawowe, obycie komuterowe: ma³e, znajomoœci tematyki SI: ma³a
+- klient instytucjonalny - wiek 18-65, wykszta³cenie: œrednie, obycie komuterowe: œrednie, znajomoœci tematyki SI: ma³a
+- pracownik - wiek 18-65, wykszta³cenie: œrednie, obycie komuterowe: œrednie, znajomoœci tematyki SI: du¿a
+- kierownik - wiek 22-65, wykszta³cenie: œrednie, obycie komuterowe: œrednie, znajomoœci tematyki SI: bardzo du¿a
+c) zadania u¿ytkowników:
+- klient indywidualny - zadanie "Klient Jan Palec chce wstawiæ czy wyczyszczono jego dywan, który odda³ do prania 22.09.2019, numer zlecenia na paragonie 22/34";
+
+d) scenariusze:
+* Klient uruchamia SI pralni
+E1
+* Klient wybiera opcjê sprawdzenia stanu us³ugi
+E2
+* Klient wpisuje dane zamówienia - data 22.09.2019, numer zlecenia na paragonie 22/34
+E3
+* Klient wybiera opcjê wyszukiwania
+E4
+* System pokazuje stan zamówienia
+E5
+* Klient wraca do ekranu g³ównego
+E1
+e) projekt interfejsu
